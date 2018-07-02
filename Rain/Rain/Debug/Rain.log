@@ -1,9 +1,9 @@
 ﻿  main.cpp
-c:\users\catalin\source\repos\rain\rain\main.cpp(13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\catalin\source\repos\rain\rain\main.cpp(14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\catalin\source\repos\rain\rain\main.cpp(15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\catalin\source\repos\rain\rain\main.cpp(20): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\catalin\source\repos\rain\rain\main.cpp(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\catalin\source\repos\rain\rain\main.cpp(29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\catalin\source\repos\rain\rain\main.cpp(30): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\catalin\source\repos\rain\rain\main.cpp(22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\catalin\source\repos\rain\rain\main.cpp(23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\catalin\source\repos\rain\rain\main.cpp(24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\catalin\source\repos\rain\rain\main.cpp(29): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\catalin\source\repos\rain\rain\main.cpp(36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\catalin\source\repos\rain\rain\main.cpp(38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\catalin\source\repos\rain\rain\main.cpp(39): warning C4305: 'argument': truncation from 'double' to 'float'
   Rain.vcxproj -> C:\Users\Catalin\source\repos\Rain\Debug\Rain.exe

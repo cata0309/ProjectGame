@@ -1,5 +1,14 @@
 #include<SFML/Graphics.hpp>
+#include<random>
 float map(float, float, float, float, float);
+
+static std::random_device rd;
+static std::mt19937 rng(rd());
+int randomizator(int a, int b) {
+	std::uniform_int_distribution<int>uid(a, b); // not static
+	return uid(rng);
+}
+
 class drop :public sf::RectangleShape {
 	float x;
 	float y;
@@ -10,9 +19,9 @@ public:
 	void fall();
 };
 drop::drop() {
-	this->x = rand() % 600;
-	this->y = rand() % (500 - 300) + 300;
-	this->z = rand() % 10 + 1;
+	this->x = randomizator(0, 600);//rand() % 600;
+	this->y = randomizator(300, 500);//rand() % (500 - 300) + 300;
+	this->z = randomizator(1, 10);//rand() % 10 + 1;
 	this->yspeed = map(this->z, 1, 10, 5, 15);//rand() % (15 - 5) + 5;//5;//2
 	this->setSize(sf::Vector2f(4, 30));
 	//this->setFillColor(sf::Color(138, 43, 226));
@@ -24,9 +33,9 @@ void drop::fall() {
 	this->move(0, yspeed);
 	if (this->getPosition().y > 500)
 	{
-		this->z = rand() % 10 + 1;
+		this->z = randomizator(1, 10); //rand() % 10 + 1;
 		this->yspeed = map(this->z, 1, 10, 5, 15);
-		this->y = rand() % (500 - 300) + 200;
+		this->y = randomizator(200, 500);//rand() % (500 - 300) + 200;
 		this->setScale(sf::Vector2f(map(this->z, 1, 10, 0.3, 0.8), map(this->z, 1, 10, 0.3, 0.8)));
 		this->setPosition(this->x, -this->y);
 	}
